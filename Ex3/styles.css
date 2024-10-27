@@ -5,5 +5,8 @@
     width: 100%;
     height: 100vh;
     white-space: pre;
-    font-size: x-large;
+    font-size:large;
+    font-weight:900;
+    background-color: rgb(51, 255, 64);
+    overflow-y: scroll;
 }
