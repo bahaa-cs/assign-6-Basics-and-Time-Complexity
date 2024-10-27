@@ -21,11 +21,17 @@ for(let i=1;i<=x;i++){
         sticks_n=sticks_n+2
 }
 
-var html_content=tree.join('\n')
+
+
+var html_content=tree.join('<br>')
+
 console.log(html_content)
 
 var tree_div = document.createElement("div")
 tree_div.classList.add("tree")
-tree_div.textContent=html_content
+for(let i=0;i<tree.length;i++){
+    tree_div.innerHTML+=tree[i]+"\n"
+}
+
 document.body.appendChild(tree_div)
 
