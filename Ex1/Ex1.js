@@ -1,4 +1,4 @@
-var rows = 10
+var rows = prompt("Number of rows: ")
 var stars_n = 1
 var spacing_n
 var spacing
