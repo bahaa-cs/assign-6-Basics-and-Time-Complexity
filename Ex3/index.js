@@ -28,9 +28,10 @@ var html_content=tree.join('<br>')
 console.log(html_content)
 
 var tree_div = document.createElement("div")
+
 tree_div.classList.add("tree")
 for(let i=0;i<tree.length;i++){
-    tree_div.innerHTML+=tree[i]+"\n"
+    tree_div.innerHTML+=tree[i]+"<br>"
 }
 
 document.body.appendChild(tree_div)
