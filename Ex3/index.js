@@ -1,7 +1,5 @@
-
-
 var x = prompt("Number of rows: ")
-var stars_n = 1
+var sticks_n = 1
 var spacing_n
 var spacing
 var output
@@ -9,15 +7,18 @@ var output
 var tree=[]
 
 for(let i=1;i<=x;i++){
+
     spacing_n=x-i
     spacing = " ".repeat(spacing_n)
 
-    output = "*".repeat(stars_n)
-    
-    tree.push(spacing+output)
+    output = "|".repeat(sticks_n)
+    if (i==1){
+        tree.push(spacing+" *")
+    }
+    tree.push( spacing+"*" +output+ "*")
 
     if(i<x)
-        stars_n=stars_n+2
+        sticks_n=sticks_n+2
 }
 
 var html_content=tree.join('\n')
