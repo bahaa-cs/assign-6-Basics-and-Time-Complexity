@@ -1,5 +1,5 @@
-x=21
 
+x=int(input("Numbers of rows: "))
 stars_n=1
 
 for i in range(1,x+1):
@@ -8,6 +8,7 @@ for i in range(1,x+1):
     
     output="*"*stars_n
     print(spacing+output)
+    
     stars_n=stars_n+2 if i<x else stars_n
     
 for i in range(x,1,-1):
