@@ -1,12 +1,29 @@
+body{
+    display: flex;
+}
+
 .tree{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 30%;
     height: 100vh;
     white-space: pre;
     font-size:large;
     font-weight:900;
-    background-color: rgb(51, 255, 64);
+    background-color: grey;
     overflow-y: scroll;
+    color: white;
+}
+
+.green{
+    background-color: rgb(161, 255, 161);
+    width: 30%;
+    height: 100vh;
+}
+
+.red{
+    background-color: rgb(255, 157, 157);
+    width: 30%;
+    height: 100vh;
 }

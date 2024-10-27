@@ -25,8 +25,6 @@ for(let i=1;i<=x;i++){
 
 var html_content=tree.join('<br>')
 
-console.log(html_content)
-
 var tree_div = document.createElement("div")
 
 tree_div.classList.add("tree")
@@ -36,3 +34,11 @@ for(let i=0;i<tree.length;i++){
 
 document.body.appendChild(tree_div)
 
+var green_div = document.createElement("div")
+green_div.classList.add("green")
+
+var red_div = document.createElement("div")
+red_div.classList.add("red")
+
+document.body.appendChild(green_div)
+document.body.appendChild(red_div)
